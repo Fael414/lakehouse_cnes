@@ -14,6 +14,9 @@ resources:
         - task_key: ingestao_bigquery
           notebook_task:
             notebook_path: /Workspace/Users/rafael.correa@al.infnet.edu.br/lakehouse_cnes/01_ingestao/ingestao_cnes_bigquery
+            base_parameters:
+              ano: "2026"
+              mes: "2"
             source: WORKSPACE
         - task_key: bronze
           depends_on:
